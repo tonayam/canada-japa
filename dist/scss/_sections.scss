@@ -1,0 +1,194 @@
+.problem-statement {
+  position: relative;
+  overflow: hidden;
+
+  .top-right-ellipse {
+    position: absolute;
+    top: -110px;
+    right: -30px;
+    transform: rotate(-50deg);
+    z-index: -3;
+  }
+  .bottom-left-ellipse {
+    position: absolute;
+    bottom: -110px;
+    left: -30px;
+    transform: rotate(-50deg);
+    z-index: -4;
+  }
+  &-content {
+    width: 90%;
+    margin: auto;
+    padding: 3rem 0 4rem;
+    h6 {
+      font-weight: 700;
+      text-align: center;
+    }
+    &-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+      .item {
+        @include flexC;
+        background: #fcfcfc;
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+        height: 51px;
+        border-radius: 5px;
+        padding: 1rem;
+        margin: 13px 0;
+        font-size: 12px;
+        img {
+          border-right: 1px solid #9b9a9a;
+          padding-right: 10px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.this-is-us {
+  padding: 5rem 0;
+  background: #7796cb;
+  &-content {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+
+    h6 {
+      font-weight: 700;
+    }
+    img {
+      width: 100%;
+    }
+    p {
+      font-size: 14px;
+      margin-top: 22px;
+    }
+  }
+}
+
+.our-services {
+  &-content {
+    width: 90%;
+    padding: 3rem 0;
+    margin: auto;
+    h6 {
+      text-align: center;
+    }
+    &-card {
+      border: 2px solid #3a3335;
+      width: 100%;
+      height: 90%;
+      margin-top: 2rem;
+      padding-bottom: 3rem;
+      box-shadow: 0px 6.07692px 18.2308px 3.03846px rgba(0, 0, 0, 0.1);
+      h6 {
+        margin: 30px 0 10px 0;
+      }
+      p {
+        text-align: center;
+        padding: 0 1rem;
+      }
+      button {
+        background: $primaryColor;
+        color: white;
+        padding: 10px;
+        width: 50%;
+        margin: auto;
+        border: none;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+.testimonies {
+  &-content {
+    width: 100%;
+    background: $primaryColor;
+    margin: auto;
+    color: #fff;
+    padding: 5rem 2rem;
+    h6 {
+      text-align: center;
+    }
+    img {
+      margin: auto;
+    }
+    .testimony {
+      width: 25%;
+      @include flexC;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 120px;
+      .small-quote {
+        padding-top: 4rem;
+      }
+      .client-name {
+        margin: 30px 0 16px 0;
+        &.active {
+          font-size: 32px !important;
+        }
+      }
+      p.active {
+        font-size: 32px !important;
+      }
+      &.active {
+        width: 40%;
+      }
+    }
+  }
+}
+
+.latest {
+  &-content {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    padding: 3rem 0;
+    &-post {
+      margin: 1.5rem 0;
+      .text {
+        width: 55%;
+        font-size: 14px;
+        .preview {
+          font-size: 12px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.newsletter {
+  background: #f1f1f1;
+  &-content {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 3rem 0;
+    p {
+      margin: 16px 0 32px 0;
+    }
+    input {
+      margin-bottom: 40px;
+      width: 100%;
+      height: 40px;
+      padding: 0.5rem;
+      outline: none;
+      border: 1px solid #615a5a;
+    }
+    button {
+      background: #020300;
+      border: none;
+      height: 50px;
+      width: 60%;
+      color: white;
+      margin: 0 auto;
+    }
+  }
+}

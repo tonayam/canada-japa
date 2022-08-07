@@ -1,0 +1,60 @@
+.nav {
+  @include flexCB;
+  background: $primaryColor;
+  height: 66px;
+  width: 100%;
+  padding: 0 25px;
+  color: #fff;
+  font-weight: 600;
+
+  .hamburger {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 25px;
+    top: 2rem;
+    cursor: pointer;
+    // BARS
+    &-btn {
+      width: 20px;
+      height: 1px;
+      background: #fff;
+      position: absolute;
+      right: 10%;
+      @include transition-ease;
+      &::after {
+        content: "";
+        width: 20px;
+        height: 1px;
+        background: #fff;
+        position: absolute;
+        top: -7px;
+        @include transition-ease;
+      }
+      &::before {
+        content: "";
+        width: 20px;
+        height: 1px;
+        background: #fff;
+        position: absolute;
+        top: 7px;
+        @include transition-ease;
+      }
+      &.open {
+        background: transparent;
+        &::after {
+          transform: rotate(45deg) translate(5px, 7px);
+        }
+        &::before {
+          transform: rotate(-45deg) translate(2px, -5px);
+        }
+      }
+    }
+  }
+  &-items {
+    li:hover {
+      color: #fac26e;
+      @include transition-ease;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.footer {
+  width: 100%;
+  background: #101010;
+  color: #fff;
+  &-content {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &-logo {
+      width: 40%;
+    }
+    p {
+      font-size: 14px;
+      margin: 16px 0 72px 0;
+      text-align: center;
+    }
+    ul {
+      list-style-type: none;
+      text-align: center;
+      padding-left: 0;
+      li {
+        margin: 16px 0;
+      }
+    }
+    .socials {
+      margin: 12px 0 44px 0;
+      justify-content: center;
+      i {
+        margin: 0 7px;
+      }
+    }
+    hr {
+      background: #fff;
+      height: 2px;
+      color: #fff;
+    }
+    .copyright {
+      margin-bottom: 0;
+    }
+  }
+}

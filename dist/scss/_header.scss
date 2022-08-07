@@ -1,0 +1,47 @@
+.header {
+  height: 92vh;
+  width: 100%;
+  background: url(../img/hero-mobile.png);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+
+  &-text {
+    padding: 0 100px 0 24px;
+    position: absolute;
+    bottom: 50px;
+    h1 {
+      line-height: 56px;
+    }
+    p {
+      line-height: 24px;
+      margin: 20px 0 60px 0;
+    }
+  }
+
+  &-btn {
+    width: 70%;
+    height: 56px;
+    background: $primaryColor;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+}
+
+.breaking-news {
+  height: 42px;
+  font-size: 700;
+  background: #f1f1f1;
+  @include flexC;
+  span {
+    padding: 7px 15px;
+    background: #7796cb;
+    color: #fff;
+  }
+  p {
+    padding: 8px 15px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+}

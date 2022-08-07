@@ -1,0 +1,385 @@
+// MOBILE PHONES
+
+@media screen and (max-width: 767px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100vw;
+    &-items {
+      position: absolute;
+      top: 64px;
+      left: 0;
+      height: 94vh;
+      width: 100%;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: #000;
+      list-style-type: none;
+      padding: 149px 25px 0 25px;
+      background: url(../img/leaf.png), #fff;
+      background-size: 70%;
+      background-repeat: no-repeat;
+      background-position: center;
+      @include transition-ease;
+      li {
+        font-size: 20px;
+        padding: 16px 0;
+        border-bottom: 1px solid #000;
+        width: 100%;
+      }
+      &.open {
+        display: flex;
+      }
+    }
+  }
+  .header {
+    margin-top: 66px;
+  }
+}
+
+// TABLETS
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav {
+    height: 116px;
+    padding: 0 25px;
+
+    .hamburger {
+      display: none;
+    }
+    &-items {
+      @include flexCB;
+
+      li {
+        margin: 0 32px;
+        &.active {
+          color: #fac26e;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .header {
+    height: 89vh;
+    width: 100%;
+    background: url(../img/hero-desktop.png);
+    background-position: center;
+    background-size: cover;
+
+    &-text {
+      background: linear-gradient(to right, rgba(#000, 0.8), rgba(#000, 0));
+      width: 69%;
+      height: 88.5%;
+      padding: 0 10px 0 30px;
+      position: absolute;
+      top: 115px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        line-height: 80px;
+      }
+      p {
+        line-height: 38px;
+      }
+    }
+    &-btn {
+      width: 258px;
+    }
+  }
+
+  .problem-statement {
+    &-content {
+      width: 90%;
+      padding: 4rem 0;
+      margin-top: 5rem;
+
+      h6 {
+        font-size: 22px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      &-grid {
+        grid-template-columns: repeat(2, 1fr);
+        .item {
+          height: 84px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .this-is-us {
+    &-content {
+      p {
+        line-height: 45px;
+        text-align: start;
+        width: 49%;
+      }
+      img {
+        width: 50%;
+      }
+    }
+  }
+
+  .our-services {
+    &-content {
+      &-card {
+        width: 49%;
+        height: 552px;
+        p {
+          font-size: 19px;
+        }
+        h6 {
+          font-size: 26px;
+        }
+        .second {
+          margin-top: 4rem;
+        }
+      }
+    }
+  }
+
+  .testimonies {
+    .testimony {
+      margin-top: 60px;
+      .small-quote {
+        padding-top: 15rem;
+      }
+    }
+    p {
+      font-size: 18px;
+    }
+    h6 {
+      font-size: 23px;
+    }
+  }
+
+  .latest {
+    &-content {
+      padding: 3rem 0;
+      &-post {
+        margin: 2rem 0;
+        img {
+          width: 40%;
+        }
+        .text {
+          p {
+            font-size: 18px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .newsletter {
+    &-content {
+      width: 80%;
+      p {
+        margin: 50px 0;
+      }
+      button {
+        width: 30%;
+      }
+    }
+  }
+
+  .footer {
+    &-content {
+      &-logo {
+        width: 25%;
+      }
+      p {
+        font-size: 28px;
+        margin: 35px 0 72px 0;
+        padding: 0 90px;
+      }
+      ul {
+        margin-bottom: 4rem;
+        li {
+          margin: 16px 0;
+          font-size: 28px;
+        }
+      }
+      .socials {
+        margin-top: 16px;
+
+        i {
+          margin: 0 14px;
+        }
+      }
+    }
+  }
+}
+
+// DESKTOP SCREENS
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    height: 116px;
+    padding: 0 50px;
+
+    .hamburger {
+      display: none;
+    }
+    &-items {
+      @include flexCB;
+
+      li {
+        margin: 0 32px;
+        &.active {
+          color: #fac26e;
+        }
+      }
+    }
+  }
+
+  .header {
+    height: 83vh;
+    background: url(../img/hero-desktop.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    &-text {
+      background: linear-gradient(to right, rgba(#000, 0.8), rgba(#000, 0));
+      width: 55%;
+      height: 83.5%;
+      padding: 0 198px 0 80px;
+      position: absolute;
+      top: 115px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        line-height: 80px;
+      }
+      p {
+        line-height: 38px;
+      }
+    }
+    &-btn {
+      width: 258px;
+    }
+  }
+
+  .problem-statement {
+    height: 80vh;
+
+    &-content {
+      width: 90%;
+      margin-top: 5rem;
+
+      h6 {
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      &-grid {
+        grid-template-columns: repeat(3, 1fr);
+        .item {
+          height: 84px;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  .this-is-us {
+    &-content {
+      p {
+        text-align: start;
+        line-height: 56px;
+        width: 40%;
+      }
+      img {
+        width: 35%;
+      }
+    }
+  }
+
+  .our-services {
+    &-content {
+      &-card {
+        width: 40%;
+        height: 612px;
+        position: relative;
+        h6 {
+          font-size: 24px;
+        }
+        .second {
+          margin-top: 3.5rem;
+        }
+      }
+    }
+  }
+
+  .latest {
+    &-content {
+      &-post {
+        margin: 3rem 0;
+        .text {
+          font-size: 30px;
+          line-height: 60px;
+          .preview {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  .newsletter {
+    &-content {
+      width: 50%;
+      button {
+        width: 30%;
+      }
+    }
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 0 2rem;
+    &-content {
+      flex-direction: row;
+      text-align: start;
+
+      .one,
+      .two,
+      .three {
+        width: 30%;
+      }
+      &-logo {
+        width: 35%;
+        padding: 10px;
+      }
+      h6 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 20px;
+        text-align: start;
+        padding-right: 130px;
+      }
+      ul {
+        text-align: start;
+        li {
+          margin: 16px 0;
+        }
+      }
+      .socials {
+        flex-direction: column;
+        img {
+          margin: 10px 0px;
+        }
+      }
+    }
+  }
+}

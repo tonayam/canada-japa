@@ -16,5 +16,7 @@ $primaryColor: #7796cb;
 }
 
 @mixin transition-ease {
+  -moz-transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
   transition: all ease-in-out 0.5s;
 }

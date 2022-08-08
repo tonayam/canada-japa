@@ -43,9 +43,13 @@
       &.open {
         background: transparent;
         &::after {
+          -moz-transform: rotate(45deg) translate(5px, 7px);
+          -webkit-transform: rotate(45deg) translate(5px, 7px);
           transform: rotate(45deg) translate(5px, 7px);
         }
         &::before {
+          -moz-transform: rotate(-45deg) translate(2px, -5px);
+          -webkit-transform: rotate(-45deg) translate(2px, -5px);
           transform: rotate(-45deg) translate(2px, -5px);
         }
       }

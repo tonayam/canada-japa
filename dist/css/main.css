@@ -21,7 +21,7 @@ ul {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 800;
 }
 
@@ -41,24 +41,24 @@ section {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   h1 {
-    font-size: 72px;
+    font-size: 35px;
   }
   h6 {
-    font-size: 48px;
+    font-size: 27px;
   }
   p {
-    font-size: 24px;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 1024px) {
   h1 {
-    font-size: 64px;
+    font-size: 40px;
   }
   h6 {
-    font-size: 48px;
+    font-size: 32px;
   }
   p {
-    font-size: 24px;
+    font-size: 16px;
   }
 }
 .nav {
@@ -138,7 +138,7 @@ section {
 }
 .header-text p {
   line-height: 24px;
-  margin: 20px 0 60px 0;
+  margin: 20px 0 20px 0;
 }
 .header-btn {
   width: 70%;
